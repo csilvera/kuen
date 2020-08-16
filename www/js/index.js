@@ -12,6 +12,9 @@ var app = {
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     onDeviceReady: function() {
+		//var cod = localStorage.getItem('codigo');
+		//localStorage.setItem("codigo", cod);
+		var bn = localStorage.getItem('bn');
         app.receivedEvent('deviceready');
         console.log('Received Device Ready Event');
 		console.log(navigator.vibrate);
@@ -23,15 +26,15 @@ var app = {
 		document.addEventListener("volumedownbutton", onVolumeDownKeyDown, false);
     },
     receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
-
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-
-        console.log('Received Event: ' + id);
-        app.Welcome();
+		var bn = localStorage.getItem('bn');
+		if(bn == 1){
+			window.location 'login.html';
+		}else{
+			var x = setTimeout(() => {
+				$('#KuenVid').play();
+			}, 6000);
+			app.Welcome();
+		}
     },
 	Welcome: function(){
 		
@@ -111,6 +114,16 @@ var app = {
   
 	}
 };
+
+$('#Bienvenido').on('click', function(e){
+	e.preventDefault();
+	localStorage.setItem('bn', 1);
+	var bn = localStorage.getItem('bn');
+	if(bn == 1){
+		window.location 'login.html';
+	}
+
+});
 function plataforma(){
 	var plataform = device.platform;
 	$('#Pie').empty();
