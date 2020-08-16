@@ -1,0 +1,73 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "live.didigitales.kuen"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "live.didigitales.kuen"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "live.didigitales.kuen"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "live.didigitales.kuen"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "live.didigitales.kuen"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "live.didigitales.kuen"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "live.didigitales.kuen"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "live.didigitales.kuen"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "live.didigitales.kuen"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "live.didigitales.kuen"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "live.didigitales.kuen"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "live.didigitales.kuen"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "live.didigitales.kuen"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "live.didigitales.kuen"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "live.didigitales.kuen"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "live.didigitales.kuen"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "live.didigitales.kuen"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "live.didigitales.kuen"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "live.didigitales.kuen"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "live.didigitales.kuen"
+        }
+    }
+}

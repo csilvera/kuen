@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="live.didigitales.kuen" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Kuen sushi</name>
+    <description>
+        Comida china, la mejor comida de la ciudad.
+    </description>
+    <author email="soporte@didigitales.live" href="https://didigitales.live">
+        Didigitales Team
+    </author>
+    <i src="icon.png" />
+    <content src="index.html" />
+
+    <!-- all platforms -->
+    <preference name="phonegap-version" value="cli-9.0.0" />
+    <preference name="orientation" value="portrait" />
+    <preference name="fullscreen" value="none" />
+    <preference name="KeepRunning" value="true" />
+
+    <!--Android load -->
+    <preference name="android-build-tool" value="ant|gradle" />
+    <preference name="android-minSdkVersion" value="23" />
+    <preference name="android-targetSdkVersion" value="28" />
+    <preference name="android-installLocation" value="auto" />
+    <preference name="android-windowSoftInputMode" value="stateVisible|adjustResize" />
+    <plugin name="cordova-plugin-device" spec="~2.0.2" />
+    <preference name="BackgroundColor" value="#FFFFFF"/>
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="HideKeyboardFormAccessoryBar" value="true"/>
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="SplashScreenBackgroundColor" value="#FFFFFF"/>
+    <preference name="StatusBarBackgroundColor" value="#4472C4" />
+    
+    <preference name="SplashScreenDelay" value="0" />
+    <plugin name="cordova-plugin-background-fetch" source="npm" />
+    <plugin name="cordova-plugin-local-notification" source="npm" spec="~0.9.0-beta.2" />
+    <plugin name="cordova-plugin-geolocation" source="npm" />
+    <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" />
+    <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
+    <platform name="android">
+        <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
+        <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
+        <icon density="hdpi" src="www/res/icon/android/drawable-hdpi-icon.png" />
+        <icon density="xhdpi" src="www/res/icon/android/drawable-xhdpi-icon.png" />
+        <icon density="xxhdpi" src="www/res/icon/android/drawable-xxhdpi-icon.png" />
+        <icon density="xxxhdpi" src="www/res/icon/android/drawable-xxxhdpi-icon.png" />
+        <splash density="port-ldpi" src="www/res/screen/android/drawable-port-ldpi-screen.png" />
+        <splash density="port-mdpi" src="www/res/screen/android/drawable-port-mdpi-screen.png" />
+        <splash density="port-hdpi" src="www/res/screen/android/drawable-port-hdpi-screen.png" />
+        <splash density="port-xhdpi" src="www/res/screen/android/drawable-port-xhdpi-screen.png" />
+        <splash density="port-xxhdpi" src="www/res/screen/android/drawable-port-xxhdpi-screen.png" />
+        <splash density="port-xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" />
+    </platform>
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+</widget>
