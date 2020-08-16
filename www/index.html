@@ -7,20 +7,37 @@
     <meta name="msapplication-tap-highlight" content="no" />
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
     <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Hello World</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/hoja.css?v=1.01">
+    <title>Kuen Sushi</title>
 </head>
 
-<body>
+<body style="background-color: #FA4822;">
     <div class="app">
-        <h1>PhoneGap</h1>
-        <div id="deviceready" class="blink">
-            <p class="event listening">Connecting to Device</p>
-            <p class="event received">Device is Ready</p>
-            <div class="btn btn-primary notifica" id="add-btn"> App Notificar</div>
+        <div class="Header" id="Cabecera">
+               
+        </div>
+        <div  class="Content">
+              <div class="content" style="position: absolute;top: 70px;width: 94%;left: 3%;height: auto;"  id="Contenido">
+                  <i class="ico-plus"></i>
+                  <video loop="true" muted autoplay style="margin-left:10%;margin-top: 25px; border: 1px solid #fff; width: 80%;height: 150px;">
+                      <source src="/view/kuen.mp4" type="video/mp4">
+                   </div>
+
+                   <div class="btn-wi">Siguiente</div>
+                 </div>
+        </div>
+        <div class="Footer" id="Pie">
+            
         </div>
     </div>
+    <div id="Status">
+        
+        	
+    </div>
     <script type="text/javascript" src="cordova.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
         app.initialize();
