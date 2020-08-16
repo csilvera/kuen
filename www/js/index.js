@@ -28,7 +28,7 @@ var app = {
     receivedEvent: function(id) {
 		var bn = localStorage.getItem('bn');
 		if(bn == 1){
-			window.location 'login.html';
+			//window.location 'login.html';
 		}else{
 			var x = setTimeout(() => {
 				$('#KuenVid').play();
@@ -120,7 +120,7 @@ $('#Bienvenido').on('click', function(e){
 	localStorage.setItem('bn', 1);
 	var bn = localStorage.getItem('bn');
 	if(bn == 1){
-		window.location 'login.html';
+		//window.location 'login.html';
 	}
 
 });
